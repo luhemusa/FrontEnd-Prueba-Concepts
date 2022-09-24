@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { Fragment } from 'react'
+import DivAnimation from './utils/DivAnimation'
+import './css/body.css'
+//router
+import { Routes, Route, Link } from "react-router-dom";
+//components
+import Home from './components/Home'
+import Trends from './components/Trends'
+import NavBar from './components/NavBar'
+import Collections from './components/Collections';
+import Tips from './components/Tips';
 
-function App() {
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DivAnimation>
+        <NavBar />
+        <Routes className=".container">
+          <Route path="/" element={<Home />} />
+          <Route path="trends" element={<Trends />} />
+          <Route path="collections" element={<Collections />} />
+          <Route path="tips" element={<Tips />} />
+        </Routes>
+      </DivAnimation>
     </div>
   );
 }

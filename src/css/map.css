@@ -1,0 +1,20 @@
+.map{
+    text-align: center;
+}
+
+.map h1 {
+    font-size: 60px;
+    color:#4d5152
+}
+
+.map-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#4d5152
+}
+
+.marcador {
+    background-color: red;
+    padding: 10px;
+}

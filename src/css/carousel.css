@@ -1,0 +1,45 @@
+.img-home {
+    width: 100%;
+    margin: 0
+}
+
+.grid-home {
+    background-color: #f3d6d8;
+}
+
+.carousel-home {
+    width: 30%;
+    height: 400px;
+    position: absolute;
+    top: 200px;
+}
+
+.carousel-details {
+    height: 400px;
+    padding: 20px
+}
+
+.carousel-details h1 {
+    font-size: 65px
+}
+
+.btn-carousel {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.btn-carousel p {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0px 10px
+}
+
+
+@media screen and (max-width: 900px) {
+    .carousel-home {
+        display: none
+    }
+}

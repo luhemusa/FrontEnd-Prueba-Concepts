@@ -1,0 +1,25 @@
+
+@media screen and (max-width: 900px) {
+    .banner {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .banner h1 {
+        font-size: 30px;
+    }
+    .banner p {
+        font-size: 14px;
+    }
+    .carousel-details h1 {
+        font-size: 30px
+    }
+    .carousel-details p {
+        font-size: 14px
+    }
+}
+
+
+
+
